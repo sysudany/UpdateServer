@@ -33,6 +33,7 @@ public class UpdateRelWebsitesServlet extends HttpServlet {
 		}
 		response.getWriter().write("h地址的写法.avia\n");
 		response.getWriter().write(JSON.toJSONString(websites));
+		response.getWriter().write(request.getParameter("version"));
 	}
 
 	protected void doPost(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
